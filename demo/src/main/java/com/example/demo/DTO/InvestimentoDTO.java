@@ -1,21 +1,21 @@
 package com.example.demo.DTO;
 
-import com.example.demo.Enum.Risco;
+import com.example.demo.Investimento.Risco;
 
 public class InvestimentoDTO {
     private String email;
     private String nome;
     private String cpf;
-    private double valorPrevisto;
-    private int periodoDeAplicacao;
+    private double valorInvestido;
+    private int periodoDeAplicacaoMeses;
     private Risco risco;
 
-    public InvestimentoDTO(String email, String nome, String cpf, double valorPrevisto, int periodoDeAplicacao, Risco risco) {
+    public InvestimentoDTO(String email, String nome, String cpf, double valorInvestido, int periodoDeAplicacaoMeses, Risco risco) {
         this.email = email;
         this.nome = nome;
         this.cpf = cpf;
-        this.valorPrevisto = valorPrevisto;
-        this.periodoDeAplicacao = periodoDeAplicacao;
+        this.valorInvestido = valorInvestido;
+        this.periodoDeAplicacaoMeses = periodoDeAplicacaoMeses;
         this.risco = risco;
     }
 
@@ -46,20 +46,20 @@ public class InvestimentoDTO {
         this.cpf = cpf;
     }
 
-    public double getValorPrevisto() {
-        return valorPrevisto;
+    public double getValorInvestido() {
+        return valorInvestido;
     }
 
-    public void setValorPrevisto(double valorPrevisto) {
-        this.valorPrevisto = valorPrevisto;
+    public void setValorInvestido(double valorInvestido) {
+        this.valorInvestido = valorInvestido;
     }
 
-    public int getPeriodoDeAplicacao() {
-        return periodoDeAplicacao;
+    public int getPeriodoDeAplicacaoMeses() {
+        return periodoDeAplicacaoMeses;
     }
 
-    public void setPeriodoDeAplicacao(int periodoDeAplicacao) {
-        this.periodoDeAplicacao = periodoDeAplicacao;
+    public void setPeriodoDeAplicacaoMeses(int periodoDeAplicacaoMeses) {
+        this.periodoDeAplicacaoMeses = periodoDeAplicacaoMeses;
     }
 
     public Risco getRisco() {
