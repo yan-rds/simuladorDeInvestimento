@@ -1,8 +1,8 @@
 package com.example.demo.DTO;
 
-import com.example.demo.Risco;
+import com.example.demo.Enum.Risco;
 
-public class InvestidorDTO {
+public class InvestimentoDTO {
     private String email;
     private String nome;
     private String cpf;
@@ -10,7 +10,7 @@ public class InvestidorDTO {
     private int periodoDeAplicacao;
     private Risco risco;
 
-    public InvestidorDTO(String email, String nome, String cpf, double valorPrevisto, int periodoDeAplicacao, Risco risco) {
+    public InvestimentoDTO(String email, String nome, String cpf, double valorPrevisto, int periodoDeAplicacao, Risco risco) {
         this.email = email;
         this.nome = nome;
         this.cpf = cpf;
@@ -19,7 +19,7 @@ public class InvestidorDTO {
         this.risco = risco;
     }
 
-    public InvestidorDTO() {
+    public InvestimentoDTO() {
     }
 
     public String getEmail() {
